@@ -1,0 +1,154 @@
+{
+  "system_title": "PharmaCare Quality PMS - Total Quality Knowledge Base",
+  "version": "2.5.0-TQM",
+  "assigned_objective": "Q10: Improve Documentation & Defect Prevention",
+  "last_updated": "2026-10-11",
+  "categories": [
+    "Getting Started",
+    "Billing & POS",
+    "Inventory & Expiry Control",
+    "Poka-Yoke Safeguards",
+    "User Roles & Security",
+    "Troubleshooting & Error Codes",
+    "TQM Principles"
+  ],
+  "faqs": [
+    {
+      "id": "FAQ-001",
+      "category": "Getting Started",
+      "question": "What is PharmaCare Quality PMS and how does it support TQM?",
+      "answer": "PharmaCare Quality PMS is an enterprise-grade desktop pharmacy suite engineered with Total Quality Management (TQM) principles. It guarantees product safety through automated Poka-Yoke fail-safes, real-time expiry interception, and continuous documentation quality tracking (Objective Q10).",
+      "tags": ["overview", "tqm", "architecture", "intro"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-002",
+      "category": "Getting Started",
+      "question": "What are the default login credentials for initial system setup?",
+      "answer": "The system includes three pre-configured role-based credentials:\n1. Admin: username 'admin', password 'admin123'\n2. Pharmacist: username 'pharmacist', password 'pharm123'\n3. Cashier: username 'cashier', password 'cash123'\nAdministrators should change these default passwords upon initial deployment via the User Management screen.",
+      "tags": ["login", "credentials", "admin", "roles"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-003",
+      "category": "Billing & POS",
+      "question": "How do I process a retail counter sale?",
+      "answer": "Navigate to the 'Billing / POS' tab. Select or search an existing customer (or leave as 'Walk-in Customer'). Type the medicine name or scan its barcode in the search bar. Enter the desired quantity and click 'Add to Cart'. Adjust tax or discount if authorized, then click 'Complete Sale & Print Receipt' to finalize the transaction and update inventory atomically.",
+      "tags": ["billing", "pos", "sale", "receipt"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-004",
+      "category": "Billing & POS",
+      "question": "What happens when a cashier tries to sell more units than are in stock?",
+      "answer": "The system activates a Poka-Yoke validation gate. It immediately blocks the addition of the item to the cart and displays an explicit alert (ERR_INSUFFICIENT_STOCK) indicating the maximum available quantity. The transaction cannot proceed until the quantity is corrected, preventing overselling.",
+      "tags": ["poka-yoke", "stock", "overselling", "pos"],
+      "importance": "Critical"
+    },
+    {
+      "id": "FAQ-005",
+      "category": "Billing & POS",
+      "question": "Can an expired medicine be billed to a customer?",
+      "answer": "NO. In compliance with strict health regulations and TQM fail-safe design, the sales service runs an automated check on the expiration date. If the batch expiry date has passed, the item is strictly blocked with code ERR_EXPIRED_MEDICINE, and a Poka-Yoke audit event is logged in the quality register.",
+      "tags": ["expired", "poka-yoke", "patient safety", "billing"],
+      "importance": "Critical"
+    },
+    {
+      "id": "FAQ-006",
+      "category": "Inventory & Expiry Control",
+      "question": "How are near-expiry medicines flagged in the system?",
+      "answer": "The system continuously calculates the days remaining until expiry. Medicines expiring within 60 days are flagged with an Amber 'Expiring Soon' status badge. Medicines expiring within 15 days receive a Red 'Critical' badge. All expired stock is categorized as 'Expired' and quarantined from billing.",
+      "tags": ["expiry", "alerts", "quarantine", "inventory"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-007",
+      "category": "Inventory & Expiry Control",
+      "question": "How do I register inbound stock received from a supplier?",
+      "answer": "Open the 'Purchases / Restock' screen. Select the certified supplier from the dropdown, enter the supplier invoice number, and add received medicines with their batch number, expiration date, quantity, and unit cost price. Clicking 'Save Purchase & Restock' automatically increments on-hand inventory levels.",
+      "tags": ["purchase", "restock", "inventory", "supplier"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-008",
+      "category": "Poka-Yoke Safeguards",
+      "question": "What is Poka-Yoke and which rules are active in this application?",
+      "answer": "Poka-Yoke is a Japanese term for 'mistake-proofing'. The active Poka-Yoke mechanisms in PharmaCare include:\n1. Blank Input Blocker: Mandatory name, batch, and phone numbers.\n2. Non-Negative Pricing: Unit prices and cost prices cannot be zero or negative.\n3. Expired Drug Interceptor: Strictly prevents dispensing expired lots.\n4. Stock Bounds Checking: Prevents negative stock balances.\n5. Discount Boundary Enforcer: Caps cashier discounts at 30%.\n6. Duplicate Phone/Username Guard: Enforces relational uniqueness.",
+      "tags": ["poka-yoke", "rules", "mistake-proofing", "quality"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-009",
+      "category": "User Roles & Security",
+      "question": "What are the permissions differences between Admin, Pharmacist, and Cashier?",
+      "answer": "Permissions are enforced via a downstream Role-Based Access Control (RBAC) matrix:\n- Admin: Full system access, user management, financial reports, supplier configuration, and quality audit access.\n- Pharmacist: Inventory management, stock adjustment, supplier purchases, dispensing, and inventory reports.\n- Cashier: Retail counter billing, customer profile lookups, and receipt re-printing only.",
+      "tags": ["rbac", "security", "permissions", "roles"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-010",
+      "category": "Troubleshooting & Error Codes",
+      "question": "What does error code ERR_EXPIRED_MEDICINE mean?",
+      "answer": "This error is raised when an item selected for dispensing has an expiration date on or before the current system calendar date. Action: Remove the batch from retail display immediately and log it in the Quarantine / Expiry Report for disposal or return to supplier.",
+      "tags": ["ERR_EXPIRED_MEDICINE", "error code", "troubleshooting"],
+      "importance": "Critical"
+    },
+    {
+      "id": "FAQ-011",
+      "category": "Troubleshooting & Error Codes",
+      "question": "What does error code ERR_INSUFFICIENT_STOCK mean?",
+      "answer": "The requested dispensing quantity exceeds the current units recorded in the database. Action: Verify physical inventory. If physical stock exists, conduct a purchase entry or inventory adjustment before dispensing.",
+      "tags": ["ERR_INSUFFICIENT_STOCK", "error code", "inventory"],
+      "importance": "Medium"
+    },
+    {
+      "id": "FAQ-012",
+      "category": "Troubleshooting & Error Codes",
+      "question": "What does error code ERR_NEGATIVE_VALUE or ERR_INVALID_NUMBER mean?",
+      "answer": "The user entered a negative number, text, or non-numeric symbols into a monetary or quantity field. Action: Provide a valid positive floating point number (e.g., 45.50) or integer.",
+      "tags": ["ERR_NEGATIVE_VALUE", "ERR_INVALID_NUMBER", "validation"],
+      "importance": "Low"
+    },
+    {
+      "id": "FAQ-013",
+      "category": "TQM Principles",
+      "question": "How does this system fulfill Quality Objective Q10 (Improve Documentation)?",
+      "answer": "Quality Goal Q10 is fulfilled through four integrated layers:\n1. 100% Docstring & Type Annotation coverage across all code modules.\n2. In-App Interactive Help & Searchable FAQ Center (HelpFAQ UI).\n3. Standalone User Manual and Quality Architecture specifications.\n4. Automated TQM Report measuring real-time documentation coverage, Poka-Yoke error prevention metrics, and audit log health.",
+      "tags": ["q10", "documentation", "tqm", "metrics"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-014",
+      "category": "Getting Started",
+      "question": "Where is the SQLite database file stored and how can it be backed up?",
+      "answer": "The database file is located at 'pharmacy_management/data/pharmacy.db'. It is a self-contained SQLite file. To back it up, either copy the file while the application is closed or export reports to CSV via the Reports module.",
+      "tags": ["database", "backup", "sqlite", "storage"],
+      "importance": "Medium"
+    },
+    {
+      "id": "FAQ-015",
+      "category": "TQM Principles",
+      "question": "How is the Risk Priority Number (RPN) computed in the automated FMEA Dashboard?",
+      "answer": "RPN is calculated as Severity (S) x Occurrence (O) x Detection (D) on a 1-10 scale. Occurrence (O) is dynamically computed by querying real-time counts from error_logs and poka_yoke_events in the database. Processes with RPN >= 200 or Severity >= 9 are ranked as HIGH risk, triggering mandatory Poka-Yoke controls.",
+      "tags": ["fmea", "rpn", "risk", "tqm", "six sigma"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-016",
+      "category": "TQM Principles",
+      "question": "How do I interpret the Pareto Error Analysis Chart (80/20 Rule)?",
+      "answer": "The Pareto chart displays bars representing the frequency of each error type in descending order (left axis) and an orange curve representing cumulative percentage (right axis). The red dashed 80% line marks the boundary separating the 'Vital Few' failure modes (which cause 80% of problems) from the 'Useful Many'. Quality improvement resources should be directed first at the Vital Few.",
+      "tags": ["pareto", "80-20", "six sigma", "charts", "quality"],
+      "importance": "High"
+    },
+    {
+      "id": "FAQ-017",
+      "category": "Inventory Management",
+      "question": "How do I conduct a forward/backward batch traceability audit or emergency patient recall?",
+      "answer": "Navigate to 'Batch Traceability' from the sidebar menu, select or type the Batch Number or Medicine Name, and click 'Trace Batch'. The system displays: 1) Inbound supplier purchase order (backward trace); 2) Current on-hand stock and expiry status; 3) All customer sales invoices, quantities dispensed, and timestamps (forward trace). Click 'Export Recall List' to generate an RFC-4180 CSV contact list of affected patients.",
+      "tags": ["traceability", "batch", "recall", "supplier", "patient safety"],
+      "importance": "High"
+    }
+  ]
+}
+

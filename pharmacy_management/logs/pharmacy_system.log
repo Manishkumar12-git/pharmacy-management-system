@@ -1,0 +1,154 @@
+2026-10-11 17:03:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-11 17:03:43 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-11 17:03:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations._seed_users:47 | Seeding default user accounts (Admin, Pharmacist, Cashier)...
+2026-10-11 17:03:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations._seed_categories:71 | Seeding pharmaceutical drug categories...
+2026-10-11 17:03:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations._seed_suppliers:96 | Seeding certified pharmaceutical suppliers...
+2026-10-11 17:03:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations._seed_customers:119 | Seeding baseline customer profiles...
+2026-10-11 17:03:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations._seed_medicines:142 | Seeding initial pharmaceutical catalog and inventory batches...
+2026-10-11 17:03:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-11 17:03:43 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:78 | User 'admin' authenticated successfully (Role: Admin).
+2026-10-11 17:03:44 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:78 | User 'cashier' authenticated successfully (Role: Cashier).
+2026-10-11 17:03:44 | [WARNING ] | PharmaCare.pharmacy_management.services.auth_service.login:64 | Authentication failed: Incorrect password for 'admin'.
+2026-10-11 17:03:44 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261011-170344-577 (Grand Total: 374.06)
+2026-10-11 17:04:15 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-11 17:04:15 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-11 17:04:15 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-11 17:04:15 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:78 | User 'admin' authenticated successfully (Role: Admin).
+2026-10-11 17:04:15 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:78 | User 'cashier' authenticated successfully (Role: Cashier).
+2026-10-11 17:04:16 | [WARNING ] | PharmaCare.pharmacy_management.services.auth_service.login:64 | Authentication failed: Incorrect password for 'admin'.
+2026-10-11 17:04:16 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261011-170416-433 (Grand Total: 374.06)
+2026-10-11 17:04:16 | [INFO    ] | PharmaCare.pharmacy_management.services.purchase_service.process_purchase:173 | Purchase completed: PO-20261011-9542 (Amount: 2125.0)
+2026-10-11 17:13:23 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-11 17:13:23 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-11 17:13:23 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-11 17:13:23 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'admin' authenticated successfully (Role: Admin).
+2026-10-11 17:13:23 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'cashier' authenticated successfully (Role: Cashier).
+2026-10-11 17:13:23 | [WARNING ] | PharmaCare.pharmacy_management.services.auth_service.login:65 | Authentication failed: Incorrect password for 'admin'.
+2026-10-11 17:13:23 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261011-171323-855 (Grand Total: 374.06)
+2026-10-11 17:13:23 | [INFO    ] | PharmaCare.pharmacy_management.services.purchase_service.process_purchase:173 | Purchase completed: PO-20261011-3862 (Amount: 2125.0)
+2026-10-11 17:13:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-11 17:13:43 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-11 17:13:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-11 17:15:08 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-11 17:15:08 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-11 17:15:08 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-11 17:15:08 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'admin' authenticated successfully (Role: Admin).
+2026-10-11 17:15:08 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'cashier' authenticated successfully (Role: Cashier).
+2026-10-11 17:15:08 | [WARNING ] | PharmaCare.pharmacy_management.services.auth_service.login:65 | Authentication failed: Incorrect password for 'admin'.
+2026-10-11 17:15:08 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261011-171508-486 (Grand Total: 374.06)
+2026-10-11 17:15:08 | [INFO    ] | PharmaCare.pharmacy_management.services.purchase_service.process_purchase:173 | Purchase completed: PO-20261011-9811 (Amount: 2125.0)
+2026-10-11 17:20:48 | [INFO    ] | PharmaCare.__main__.main:175 | Starting PharmaCare Quality PMS v2.5.0-TQM...
+2026-10-11 17:20:48 | [INFO    ] | PharmaCare.__main__.main:176 | Assigned TQM Objective: Q10: Improve Documentation & Defect Prevention
+2026-10-11 17:20:48 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-11 17:20:48 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-11 17:20:48 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-11 17:21:09 | [WARNING ] | PharmaCare.pharmacy_management.services.auth_service.login:56 | Authentication failed: User 'Manish kumar' does not exist.
+2026-10-11 17:21:19 | [WARNING ] | PharmaCare.pharmacy_management.services.auth_service.login:56 | Authentication failed: User 'Manishkumar' does not exist.
+2026-10-11 17:21:36 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'pharmacist' authenticated successfully (Role: Pharmacist).
+2026-10-11 17:21:36 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for pharmacist (Pharmacist)
+2026-10-11 17:22:46 | [INFO    ] | PharmaCare.__main__._on_close:165 | Application shutdown cleanly.
+2026-10-12 22:20:38 | [INFO    ] | PharmaCare.__main__.main:175 | Starting PharmaCare Quality PMS v2.5.0-TQM...
+2026-10-12 22:20:38 | [INFO    ] | PharmaCare.__main__.main:176 | Assigned TQM Objective: Q10: Improve Documentation & Defect Prevention
+2026-10-12 22:20:38 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-12 22:20:38 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-12 22:20:38 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-12 22:20:49 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'pharmacist' authenticated successfully (Role: Pharmacist).
+2026-10-12 22:20:49 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for pharmacist (Pharmacist)
+2026-10-12 22:21:35 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'pharmacist' logged out.
+2026-10-12 22:21:38 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'admin' authenticated successfully (Role: Admin).
+2026-10-12 22:21:38 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for admin (Admin)
+2026-10-12 22:21:50 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'admin' logged out.
+2026-10-12 22:21:56 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'cashier' authenticated successfully (Role: Cashier).
+2026-10-12 22:21:56 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for cashier (Cashier)
+2026-10-12 22:22:07 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'cashier' logged out.
+2026-10-12 22:22:10 | [INFO    ] | PharmaCare.__main__._on_close:165 | Application shutdown cleanly.
+2026-10-14 20:30:10 | [INFO    ] | PharmaCare.__main__.main:175 | Starting PharmaCare Quality PMS v2.5.0-TQM...
+2026-10-14 20:30:10 | [INFO    ] | PharmaCare.__main__.main:176 | Assigned TQM Objective: Q10: Improve Documentation & Defect Prevention
+2026-10-14 20:30:10 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-14 20:30:10 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-14 20:30:10 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-14 20:30:21 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'pharmacist' authenticated successfully (Role: Pharmacist).
+2026-10-14 20:30:21 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for pharmacist (Pharmacist)
+2026-10-14 20:31:37 | [WARNING ] | PharmaCare.pharmacy_management.services.medicine_service.add_medicine:138 | Cost price (109.0) is higher than selling price (100.0) for lacosamide
+2026-10-14 20:31:37 | [INFO    ] | PharmaCare.pharmacy_management.services.medicine_service.add_medicine:182 | Created new medicine ID 11 (lacosamide)
+2026-10-14 20:36:36 | [INFO    ] | PharmaCare.pharmacy_management.services.medicine_service.add_medicine:182 | Created new medicine ID 12 (lacosamide)
+2026-10-14 20:36:58 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261014-203658-956 (Grand Total: 5880.0)
+2026-10-14 20:43:44 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'pharmacist' logged out.
+2026-10-14 20:43:50 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'cashier' authenticated successfully (Role: Cashier).
+2026-10-14 20:43:50 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for cashier (Cashier)
+2026-10-14 20:44:05 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'cashier' logged out.
+2026-10-14 20:44:09 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'admin' authenticated successfully (Role: Admin).
+2026-10-14 20:44:09 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for admin (Admin)
+2026-10-14 20:44:16 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'admin' logged out.
+2026-10-14 20:50:34 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-14 20:50:34 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-14 20:50:34 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-14 20:50:34 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'admin' authenticated successfully (Role: Admin).
+2026-10-14 20:50:34 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'cashier' authenticated successfully (Role: Cashier).
+2026-10-14 20:50:34 | [WARNING ] | PharmaCare.pharmacy_management.services.auth_service.login:65 | Authentication failed: Incorrect password for 'admin'.
+2026-10-14 20:50:34 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261014-205034-993 (Grand Total: 374.06)
+2026-10-14 20:50:34 | [INFO    ] | PharmaCare.pharmacy_management.services.purchase_service.process_purchase:173 | Purchase completed: PO-20261014-5145 (Amount: 2125.0)
+2026-10-14 20:51:43 | [INFO    ] | PharmaCare.__main__.main:175 | Starting PharmaCare Quality PMS v2.5.0-TQM...
+2026-10-14 20:51:43 | [INFO    ] | PharmaCare.__main__.main:176 | Assigned TQM Objective: Q10: Improve Documentation & Defect Prevention
+2026-10-14 20:51:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-14 20:51:43 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-14 20:51:43 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-14 20:51:50 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'pharmacist' authenticated successfully (Role: Pharmacist).
+2026-10-14 20:51:50 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for pharmacist (Pharmacist)
+2026-10-14 20:52:36 | [INFO    ] | PharmaCare.pharmacy_management.services.inventory_service.adjust_stock:172 | Adjusted stock from 235 to 235 (Delta: 0). Reason: Supplier Discrepancy
+2026-10-14 20:55:41 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'pharmacist' logged out.
+2026-10-14 20:55:43 | [INFO    ] | PharmaCare.__main__._on_close:165 | Application shutdown cleanly.
+2026-10-18 21:10:30 | [INFO    ] | PharmaCare.__main__.main:175 | Starting PharmaCare Quality PMS v2.5.0-TQM...
+2026-10-18 21:10:30 | [INFO    ] | PharmaCare.__main__.main:176 | Assigned TQM Objective: Q10: Improve Documentation & Defect Prevention
+2026-10-18 21:10:30 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-18 21:10:30 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-18 21:10:30 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-18 21:10:37 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'pharmacist' authenticated successfully (Role: Pharmacist).
+2026-10-18 21:10:37 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for pharmacist (Pharmacist)
+2026-10-18 21:12:04 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261018-211204-146 (Grand Total: 5292.0)
+2026-10-18 21:13:04 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'pharmacist' logged out.
+2026-10-18 21:13:06 | [INFO    ] | PharmaCare.__main__._on_close:165 | Application shutdown cleanly.
+2026-10-27 21:49:57 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-27 21:49:57 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-27 21:49:57 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-27 21:49:57 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'admin' authenticated successfully (Role: Admin).
+2026-10-27 21:49:57 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'cashier' authenticated successfully (Role: Cashier).
+2026-10-27 21:49:57 | [WARNING ] | PharmaCare.pharmacy_management.services.auth_service.login:65 | Authentication failed: Incorrect password for 'admin'.
+2026-10-27 21:49:57 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261027-214957-844 (Grand Total: 374.06)
+2026-10-27 21:49:57 | [INFO    ] | PharmaCare.pharmacy_management.services.purchase_service.process_purchase:173 | Purchase completed: PO-20261027-6934 (Amount: 2125.0)
+2026-10-27 21:54:54 | [INFO    ] | PharmaCare.__main__.main:175 | Starting PharmaCare Quality PMS v2.5.0-TQM...
+2026-10-27 21:54:54 | [INFO    ] | PharmaCare.__main__.main:176 | Assigned TQM Objective: Q10: Improve Documentation & Defect Prevention
+2026-10-27 21:54:54 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-27 21:54:54 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-27 21:54:54 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-27 21:55:00 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'pharmacist' authenticated successfully (Role: Pharmacist).
+2026-10-27 21:55:00 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for pharmacist (Pharmacist)
+2026-10-27 21:59:17 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'pharmacist' logged out.
+2026-10-27 21:59:20 | [INFO    ] | PharmaCare.__main__._on_close:165 | Application shutdown cleanly.
+2026-10-27 22:10:27 | [INFO    ] | PharmaCare.__main__.main:175 | Starting PharmaCare Quality PMS v2.5.0-TQM...
+2026-10-27 22:10:27 | [INFO    ] | PharmaCare.__main__.main:176 | Assigned TQM Objective: Q10: Improve Documentation & Defect Prevention
+2026-10-27 22:10:27 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-27 22:10:27 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-27 22:10:27 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-27 22:10:36 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'pharmacist' authenticated successfully (Role: Pharmacist).
+2026-10-27 22:10:36 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for pharmacist (Pharmacist)
+2026-10-27 22:12:13 | [INFO    ] | PharmaCare.__main__._on_close:165 | Application shutdown cleanly.
+2026-10-28 10:14:14 | [INFO    ] | PharmaCare.__main__.main:175 | Starting PharmaCare Quality PMS v2.5.0-TQM...
+2026-10-28 10:14:14 | [INFO    ] | PharmaCare.__main__.main:176 | Assigned TQM Objective: Q10: Improve Documentation & Defect Prevention
+2026-10-28 10:14:14 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-28 10:14:14 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-28 10:14:14 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-28 10:14:34 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'pharmacist' authenticated successfully (Role: Pharmacist).
+2026-10-28 10:14:34 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for pharmacist (Pharmacist)
+2026-10-28 10:15:04 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.logout:86 | User 'pharmacist' logged out.
+2026-10-28 10:15:06 | [INFO    ] | PharmaCare.__main__._on_close:165 | Application shutdown cleanly.
+2026-10-28 13:16:40 | [INFO    ] | PharmaCare.__main__.main:175 | Starting PharmaCare Quality PMS v2.5.0-TQM...
+2026-10-28 13:16:40 | [INFO    ] | PharmaCare.__main__.main:176 | Assigned TQM Objective: Q10: Improve Documentation & Defect Prevention
+2026-10-28 13:16:40 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:26 | Initializing database schema...
+2026-10-28 13:16:40 | [INFO    ] | PharmaCare.pharmacy_management.database.db.execute_script:154 | Successfully executed SQL script.
+2026-10-28 13:16:40 | [INFO    ] | PharmaCare.pharmacy_management.database.migrations.initialize_database:29 | Database schema and baseline seed verification complete.
+2026-10-28 13:16:48 | [INFO    ] | PharmaCare.pharmacy_management.services.auth_service.login:79 | User 'pharmacist' authenticated successfully (Role: Pharmacist).
+2026-10-28 13:16:48 | [INFO    ] | PharmaCare.__main__.on_login_success:158 | Session established for pharmacist (Pharmacist)
+2026-10-28 13:19:36 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261028-131936-629 (Grand Total: 33.08)
+2026-10-28 13:24:39 | [INFO    ] | PharmaCare.pharmacy_management.services.sales_service.process_sale:198 | Sale completed successfully: INV-20261028-132439-804 (Grand Total: 66.15)
+2026-10-28 13:27:08 | [INFO    ] | PharmaCare.__main__._on_close:165 | Application shutdown cleanly.
